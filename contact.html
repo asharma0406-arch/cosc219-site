@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Contact Info</title>
+</head>
+<body>
+<header>
+    <nav> <a href="index.html"> Home </a>
+        <a href="about.html"> About </a>
+        <a href="projects.html"> Projects </a>
+        <a href="contact.html"> Contact</a>
+        <link rel="stylesheet" href="css/styles.css">
+    </nav>
+</header>
+<main>
+    <h1>Contact Information</h1>
+    <form class="Contact-form">
+        
+   
+    <label for="name"> Name </label>
+    <input type="text" id="name" name="name"  required placeholder="Enter your name">
+    <label for="email"> E-mail </label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+    <label for="provider">Select your email provider</label>
+    <select id="provider" name="provider" >
+  
+    <option value="gmail"> Gmail</option>
+    <option value="yahoo"> Yahoo</option>
+    <option value="outlook"> Outlook</option>
+
+  </select>
+
+  <fieldset>
+    <legend> Preferred way to contact me</legend>
+    <input type ='radio' id="contact-email" name="contact" value="email">
+    <label for="contact-email"> Email</label>
+    <input type ='radio' id="contact-phone" name="contact" value="phone">
+    <label for="contact-phone"> Phone</label>
+  </fieldset>
+
+  <fieldset>
+    <legend> What is your preferred languages.</legend>
+    <input type = "checkbox" id ="english" name="languages" value="english">
+    <label for="english"> English</label>
+    <input type = "checkbox" id ="hindi" name="languages" value="hindi">
+    <label for="hindi"> Hindi</label>
+    <input type = "checkbox" id ="punjabi" name="languages" value="punjabi">
+    <label for="punjabi"> Punjabi</label>
+
+
+ </fieldset>
+
+ <label for="msg">Message</label>
+<textarea id="msg" name="msg" rows="5" cols="40"  required></textarea>
+<button type="submit">Send message</button>
+ </form>
+</main>
+<footer><p>&copy; 2026 My Website</p></footer>
+</body>
+</html>
