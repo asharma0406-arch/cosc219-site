@@ -3,6 +3,22 @@
 *::after {
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.about-me{
+    display: grid;
+    gap: 1rem;
+}
+.cards{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
 body{
      color: var(--ink);
     background-color: #eeeeee;
@@ -47,7 +63,10 @@ select{
     border-radius: 0.5rem;
     border: 1px solid var(--muted);
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+}
 textarea{
     width: 100%;
     padding: 0.5rem;
@@ -61,6 +80,7 @@ button:focus{
 a{
      padding: 0.5rem;
     color: var(--brand);
+    overflow-wrap: anywhere;
 
 }
 nav a:hover{
@@ -135,4 +155,34 @@ fieldset{
     border: 1px solid var(--muted);
     padding: 0.5rem;
     margin-block: var(--space);
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+th, td{
+    overflow-wrap: anywhere;
+}
+
+@media(min-width: 38rem){
+    .about-me{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media(min-width: 40rem){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media(min-width: 60rem){
+    main{
+        max-width: 70rem;
+
+    }
+
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }
