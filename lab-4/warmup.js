@@ -19,7 +19,7 @@ console.log(Boolean("0"));
 console.log(0 || "fallback");
 // "fallback"
 console.log(0 ?? "fallback");
-// 0
+// fallback
 //i was thinking first that the output will be fallback as
 // ?? uses the values if its null or undefined and i though 0 is same as null. but its not so i am amazed that the amout is 0;
 console.log("" || "empty");
